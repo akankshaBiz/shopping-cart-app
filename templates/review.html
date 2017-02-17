@@ -1,0 +1,17 @@
+
+<table class="table-responsive" ng-repeat="product in cart">
+	<tr>
+		<td class="col-sm-3"><span>product: </span><img class="ProductImage" ng-src="{{product.image}}" title="{{product.title}}"/></td>
+		<td class="col-sm-3">Quantity: {{product.quantity}}</td>
+		<td class="col-sm-3">Price: {{product.quantity * product.price}}$</td>
+	</tr>
+</table>
+<div class="reviewTotal">
+	<div class="col-sm-4">
+		<button ng-click="backToShop()">Back to shop</button>
+	</div>
+	<div class="col-sm-3">Total:  {{getCartPrice()}}$</div>
+	<div class="col-sm-5">
+		<button ng-click="getInvoice()">Proceed to Invoice</button>
+	</div>
+</div>

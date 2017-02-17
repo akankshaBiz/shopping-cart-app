@@ -1,0 +1,45 @@
+{"products": [
+	{
+		"id": 1,
+		"title": "Death note",
+		"image": "images/death_note.jpg",
+		"price": 25,
+		"quantity": 0
+	},
+	{
+		"id": 2,
+		"title": "Naruto",
+		"image": "images/naruto.jpg",
+		"price": 50,
+		"quantity": 0
+	},
+	{
+		"id": 3,
+		"title": "one piece",
+		"image": "images/one_piece.jpg",
+		"price": 8,
+		"quantity": 0
+	},
+	{
+		"id": 4,
+		"title": "inuyasha",
+		"image": "images/inuyasha.jpg",
+		"price": 8,
+		"quantity": 0
+	},
+	{
+		"id": 5,
+		"title": "Rourin kenshin",
+		"image": "images/samurai.jpg",
+		"price": 10,
+		"quantity": 0
+	},
+	{
+		"id": 6,
+		"title": "My butler",
+		"image": "images/butler.jpg",
+		"price": 2,
+		"quantity": 0
+	}
+
+]}

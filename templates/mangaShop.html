@@ -1,0 +1,31 @@
+<div class="product-list small-block-grid-3">
+	<div class="col-sm-4" ng-repeat="product in products">
+		<figure>
+			<img ng-src="{{product.image}}" alt="{{product.title}}">
+					
+				<h5>{{product.title}}, {{product.price}}$</h5>
+				<button ng-click="addToCart(product);">Add to cart</button>
+					
+		</figure>
+		<div class="row plus_minus">
+			<div class="col-sm-1"><span ng-click="add(product);" class="glyphicon glyphicon-plus"></span></div>
+			<div class="col-sm-3"><input type="text" ng-model="product.quantity"></div>
+			<div class="col-sm-1"><span ng-click="remove(product);" class="glyphicon glyphicon-minus"></span></div>
+		</div>	
+	</div>
+</div>
+
+<div ng-if="cart.length" class="shopping-cart">
+	<h2>{{cart.length}} items in cart, {{getCartPrice()}}$</h2>
+
+		<div class="cart-item th radius" ng-repeat="product in cart">
+			<span ng-click="removeFromCart(product);" class="badge remove">x</span>
+			<img ng-src="{{product.image}}" title="{{product.title}}"/>
+			<span class="badge" ng-show="product.quantity > 1">
+				{{product.quantity}}
+				</span>
+				
+		</div>
+			
+	<button ng-click="reviewItems()">Checkout</button>
+</div>
